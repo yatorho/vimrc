@@ -1,2 +1,2 @@
 # vimrc
-Configuration for VIM!
+yatorho's fonfiguration file for VIM!

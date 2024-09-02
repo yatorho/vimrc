@@ -50,25 +50,27 @@ endfunction
 :set expandtab
 :set autoindent
 :set hlsearch
-:set guioptions-=m
+:set mouse+=a
+" :set guioptions-=m
 " :set cursorline
 " :set cursorcolumn
 " :set cursorline
 
-nnoremap <c-j> <c-d>
-nnoremap <c-k> <c-u>
-nnoremap <A-j> <c-d>
-nnoremap <A-k> <c-u>
-nnoremap <c-h> <c-y>
-nnoremap <c-l> <c-e>
-nnoremap <A-l> <c-w>l
-nnoremap <A-h> <c-w>h
-nnoremap <A-j> <c-w>j
-nnoremap <A-k> <c-w>k
+nnoremap <Esc>j <c-d>
+nnoremap <Esc>k <c-u>
+nnoremap <Esc>h <c-y>
+nnoremap <Esc>l <c-e>
+
+nnoremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
 " nnoremap <C-n> :bn<CR>
 " nnoremap <C-m> :bp<CR>
 nnoremap <C-n> gt
 nnoremap <C-m> gT
+
+nnoremap K i<CR><Esc>k$
 
 
 " leader --- <Space>
@@ -82,13 +84,13 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
-autocmd InsertEnter *se cul
+" autocmd InsertEnter *se cul
 " hi CursorLine term=bold cterm=bold ctermbg=Red
-:set nu
-:set nu
-highlight Normal guibg=grey90
-highlight Cursor guibg=Green guifg=NONE
-highlight lCursor guibg=Cyan guifg=NONE
-highlight NonText guibg=grey80
-highlight Constant gui=NONE guibg=grey95
-highlight Special gui=NONE guibg=grey95
+" :set nu
+" :set nu
+" highlight Normal guibg=grey90
+" highlight Cursor guibg=Green guifg=NONE
+" highlight lCursor guibg=Cyan guifg=NONE
+" highlight NonText guibg=grey80
+" highlight Constant gui=NONE guibg=grey95
+" highlight Special gui=NONE guibg=grey95

@@ -50,7 +50,7 @@ endfunction
 :set expandtab
 :set autoindent
 :set hlsearch
-:set mouse+=a
+" :set mouse+=a
 " :set guioptions-=m
 " :set cursorline
 " :set cursorcolumn
